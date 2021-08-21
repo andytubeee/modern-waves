@@ -1,0 +1,212 @@
+*,
+body,
+html {
+  font-family: 'Urbanist', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  touch-action: none;
+  -ms-touch-action: none;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  color: #fff;
+  background: #282929;
+  overflow-x: hidden;
+  touch-action: none;
+  -ms-touch-action: none;
+}
+
+section {
+  height: 100vh;
+  min-height: 400px;
+  padding: 150px 20vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+section > * {
+  text-align: center;
+}
+
+section h1 {
+  font-size: 3rem;
+}
+
+.blug-bg {
+  background: #0984e3;
+}
+
+.pink-bg {
+  background: #fd79a8;
+}
+
+.yellow-bg {
+  background: #fdcb6e;
+}
+
+.dark-bg {
+  background: #636e72;
+}
+
+.purple-bg {
+  background: #6c5ce7;
+}
+
+.red-bg {
+  background: #d63031;
+}
+
+.greenland-bg {
+  background: #22a6b3;
+}
+
+.orange-bg {
+  background: #e67e22;
+}
+
+.curve-css {
+  position: absolute;
+  bottom: 0;
+  height: 225px;
+  width: 100%;
+}
+
+.curve-css::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 100% 60%;
+  width: 60%;
+  height: 100%;
+  background: #fd79a8;
+  transform: translate(79.3%, 60%) rotate(-6.6deg);
+}
+.curve-css::after {
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 100% 60%;
+  width: 60%;
+  height: 100%;
+  background: #0984e3;
+  /* border: 1px solid; */
+  transform: translate(-3%, 30%) rotate(3deg);
+  z-index: 2;
+}
+
+.bubble::after {
+  content: '';
+  border-top-left-radius: 50% 100%;
+  border-top-right-radius: 50% 100%;
+  position: absolute;
+  bottom: 0;
+  height: 85%;
+  width: 100%;
+  background: #fdcb6e;
+  z-index: -1;
+}
+
+.wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(107% + 1.3px);
+  height: 191px;
+}
+
+.wave .shape-fill {
+  fill: #fdcb6e;
+}
+
+.spacer {
+  width: 100%;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  aspect-ratio: 960/340;
+}
+
+.layer1 {
+  background-image: url(./svg/layered_waves.svg);
+}
+
+.block_wave {
+  background-image: url(./svg/block_wave.svg);
+}
+
+.spacer_block {
+  width: 100%;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.stacked_steps {
+  background-image: url(./svg/stacked_steps.svg);
+}
+
+.stacked_peaks {
+  background-image: url(./svg/stacked-peaks.svg);
+}
+
+.flip {
+  transform: rotate(180deg);
+}
+
+.tilt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.tilt svg {
+  position: relative;
+  display: block;
+  width: calc(163% + 1.3px);
+  height: 190px;
+}
+
+.tilt .shape-fill {
+  fill: #282929;
+}
+
+.shorted-height {
+  height: 40vh !important;
+}
+
+.motion {
+  position: absolute;
+  transform: translateY(-20%);
+  z-index: 3;
+  width: 60%;
+}
+
+.motion h1 {
+  margin-bottom: 10px;
+}
+
+.blob-svg {
+  padding: 20px;
+}
